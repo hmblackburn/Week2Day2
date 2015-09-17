@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reusable Library</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="lib/mocha.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="lib/expect.js"></script>
+    <script src="lib/mocha.js"></script>
+    <script src="lib/sinon.js"></script>
+			<script>
+		      mocha.setup('bdd');
+			</script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <!--<script src='reusableSolution.js'></script>-->
+    <script src='reusableTemplate.js'></script>
+    <script src='reusable.tests.js'></script>
+    <script>
+      //******** Generate and style tests --- DO NOT ALTER ********
+      onload = function(){
+        var runner = window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+      };
+
+    </script>
+  </body>
+</html>
